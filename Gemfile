@@ -8,6 +8,9 @@ gem "binding_of_caller"
 gem "json"
 gem 'rake'
 gem 'pg'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+
 group :development do
   gem 'sqlite3'
 end
