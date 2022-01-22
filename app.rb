@@ -2,7 +2,6 @@ require "sinatra"
   require "sinatra/reloader" if development?
   require "pry-byebug"
   require "better_errors"
-  require "sqlite3"
   require 'sinatra/activerecord'
   require 'active_support/core_ext'
 
