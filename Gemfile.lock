@@ -56,14 +56,12 @@ GEM
       rack-protection (= 2.1.0)
       sinatra (= 2.1.0)
       tilt (~> 2.0)
-    sqlite3 (1.4.2)
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
 
 PLATFORMS
   arm64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   activerecord
@@ -72,11 +70,11 @@ DEPENDENCIES
   json
   pg
   pry-byebug
+  rack
   rake
   sinatra
   sinatra-activerecord
   sinatra-contrib
-  sqlite3
 
 RUBY VERSION
    ruby 3.0.3p157
