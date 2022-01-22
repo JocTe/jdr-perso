@@ -3,7 +3,7 @@ require "sinatra"
   require "pry-byebug"
   require "better_errors"
   require 'sinatra/activerecord'
-  require 'active_support/core_ext'
+
 
   configure :development do
     use BetterErrors::Middleware
