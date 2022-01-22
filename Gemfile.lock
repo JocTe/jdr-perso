@@ -26,6 +26,7 @@ GEM
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rake (13.0.6)
     ruby2_keywords (0.0.5)
     sinatra (2.1.0)
       mustermann (~> 1.0)
@@ -50,9 +51,13 @@ DEPENDENCIES
   json
   pg
   pry-byebug
+  rake
   sinatra
   sinatra-contrib
   sqlite3
+
+RUBY VERSION
+   ruby 2.7.3p183
 
 BUNDLED WITH
    2.2.25
