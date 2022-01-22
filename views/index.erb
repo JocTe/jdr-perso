@@ -1,0 +1,13 @@
+<h2 class="sub-header">Les Personnages</h2>
+
+<div class="cards">
+  <% @characters.each do |character| %>
+    <div class="card">
+      <img src="<%= url("/images/#{character.downcase}.jpg") %>" alt="">
+      <div class="card-bottom">
+        <h6><%= character %></h6>
+        <a href="/characters/<%= character %>" role="button" class="contrast outline">Découvrir</a>
+      </div>
+    </div>
+  <% end %>
+</div>

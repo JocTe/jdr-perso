@@ -1,0 +1,53 @@
+<div style="display:flex; align-items: center;">
+  <a style="margin-right:auto;" href="/"><kbd>< Index</kbd></a>
+  <h2 style="margin:auto;" >Fiche Personnage</h2>
+  <div style="margin-left:auto;"></div>
+</div>
+<article>
+  <header class="show-heading">
+    <hgroup>
+      <h2><%= @character[:name].capitalize %></h2>
+      <h3><em data-tooltip="classe / race"><%= @character[:type].split(" ").map(&:capitalize).join(" / ") %></em></h3>
+    </hgroup>
+    <div  >
+    <a href="https://www.black-book-editions.fr/contenu/file/258_664_cof_b02_vengeance_web_pretires_v1.pdf" role="button" class="secondary">Plus d'infos</a>
+    </div>
+  </header>
+  <div class="show-character">
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Sexe</th>
+            <th scope="col">Âge</th>
+            <th scope="col">Poids</th>
+            <th scope="col">Taille</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @character[:sex].capitalize %></td>
+            <td><%= @character[:age] %> ans</td>
+            <td><%= @character[:weight] %> kg</td>
+            <td><%= @character[:height] %> cm</td>
+          </tr>
+        </tbody>
+
+      </table>
+      <h4>Decription</h4>
+      <blockquote>
+       <%= @character[:description] %>
+        <footer>
+          <cite>- <mark>MJ Note :</mark> Vous pouvez modifier chacun de ses aspects ainsi que son origine</cite>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="container-image">
+        <img src="<%= url("/images/#{@character[:name].downcase}.jpg" ) %>" alt="">
+    </div>
+  </div>
+  <footer>
+    <h4>Origine</h4>
+    <p><%= @character[:origin] %></p>
+  </footer>
+</article>

@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="<%= url('stylesheet.css') %>">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>JDR - Personnage</title>
+  </head>
+  <body>
+    <a href="/">
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('<%= url('/images/medieval-castle-town-middle.jpg') %>');" class="banner">
+
+        <h1 class="header-title">Les Chroniques Oubliés !</h1>
+
+      </div>
+    </a>
+    <main class="container">
+      <%= yield %>
+    </main>
+  </body>
+</html>
