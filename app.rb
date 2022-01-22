@@ -3,7 +3,7 @@ require "sinatra/reloader" if development?
 require "pry-byebug"
 require "better_errors"
 require "sqlite3"
-
+set :bind, '0.0.0.0'
 DB = SQLite3::Database.new(File.join(File.dirname(__FILE__), 'db/jdr.sqlite'))
 
 configure :development do
