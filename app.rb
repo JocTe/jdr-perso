@@ -4,6 +4,7 @@ require "sinatra"
   require "better_errors"
   require "sqlite3"
   require 'sinatra/activerecord'
+  require 'active_support/core_ext'
 
   configure :development do
     use BetterErrors::Middleware
