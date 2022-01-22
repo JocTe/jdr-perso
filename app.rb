@@ -1,8 +1,9 @@
 require "sinatra"
-  require "sinatra/reloader" if development?
-  require "pry-byebug"
-  require "better_errors"
-  require 'sinatra/activerecord'
+require 'rubygems'
+require "sinatra/reloader" if development?
+require "pry-byebug"
+require "better_errors"
+require 'sinatra/activerecord'
 
 
   configure :development do
@@ -10,7 +11,7 @@ require "sinatra"
     BetterErrors.application_root = File.expand_path('..', __FILE__)
   end
 
-class App < Sinatra::Base
+
 
   current_dir = Dir.pwd
   Dir["#{current_dir}/models/*.rb"].each { |file| require file }
@@ -29,4 +30,3 @@ class App < Sinatra::Base
     # @character = cols.zip(db_array[1..-1]).to_h.transform_keys(&:to_sym)
     erb :show, layout: :layout
   end
-end
