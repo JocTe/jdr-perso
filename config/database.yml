@@ -1,9 +1,9 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite
-  host: localhost
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: jdrperso
+  pool: 2
+
 
 production:
   url: <%= ENV['DATABASE_URL'] %>

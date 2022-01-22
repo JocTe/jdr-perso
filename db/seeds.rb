@@ -1,4 +1,5 @@
-Character.new(name:"Krush", race:"Guerrier demi-orque", description:"Même comparé à d’autres demiorques, Krush est une véritable montagne
+
+p Character.create(name:"Krush", race:"Guerrier demi-orque", description:"Même comparé à d’autres demiorques, Krush est une véritable montagne
 de muscles. Deux mètres de haut, une
 charpente épaisse et lourde, des bras gros
 comme des chênes ! Ses yeux rouges et
@@ -24,7 +25,7 @@ adoptifs, il choisit de partir pour faire
 ses premières armes en tant que gardecaravane. C’est là qu’il fit la connaissance
 de Rodrick, le fils d’un de ses employeurs.")
 
-Character.new(name:"Maëla", race:"Magicienne elfe", description:"Devant vous se tient une magnifique
+Character.create(name:"Maëla", race:"Magicienne elfe", description:"Devant vous se tient une magnifique
 elfe, grande, fine et gracile. Sa peau de
 nacre, son visage aux contours parfaits
 et symétriques dégagent une beauté
@@ -45,7 +46,7 @@ arbres géants, pour y améliorer son art
 durant de longues années avant de visiter
 la forêt de Myrviel et le village de Clairval.")
 
-Character.new(name:"Karoom", race:"Prêtre nain", description:"Karoom le nain ne mesure guère
+Character.create(name:"Karoom", race:"Prêtre nain", description:"Karoom le nain ne mesure guère
 plus d’un mètre vingt, mais sa lourde
 démarche fait trembler le sol et sa voix
 rocailleuse ressemble au tonnerre. Aussi
@@ -69,7 +70,7 @@ eu la révélation de sa vocation et qu’il a
 rejoint l’ordre des prêtres de Thürdim.")
 
 
-Character.new(name:"Félindra", race:"Rôdeuse demi-elfe", description:"Félindra est une jeune femme sauvage.
+Character.create(name:"Félindra", race:"Rôdeuse demi-elfe", description:"Félindra est une jeune femme sauvage.
 Elle dissimule sous une cape de voyage
 fatiguée une étonnante chevelure
 pourpre et un visage dur. Une armure
@@ -95,7 +96,7 @@ enfant de cette union.")
 
 
 
-Character.new(name:"Rodrick", race:"Voleur humain",description:"Avec sa tignasse noire et sa petite
+Character.create(name:"Rodrick", race:"Voleur humain",description:"Avec sa tignasse noire et sa petite
 barbichette, Rodrick est très beau garçon.
 Son petit air canaille plaît énormément
 aux jeunes filles… et énerve les jeunes

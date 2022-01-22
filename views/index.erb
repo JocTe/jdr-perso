@@ -3,10 +3,10 @@
 <div class="cards">
   <% @characters.each do |character| %>
     <div class="card">
-      <img src="<%= url("/images/#{character.downcase}.jpg") %>" alt="">
+      <img src="<%= url("/images/#{character.name.downcase}.jpg") %>" alt="">
       <div class="card-bottom">
-        <h6><%= character %></h6>
-        <a href="/characters/<%= character %>" role="button" class="contrast outline">Découvrir</a>
+        <h6><%= character.name %></h6>
+        <a href="/characters/<%= character.name %>" role="button" class="contrast outline">Découvrir</a>
       </div>
     </div>
   <% end %>
